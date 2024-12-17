@@ -1,0 +1,83 @@
+.nurse-management-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.nurse-mgmt {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.search-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nurse-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.nurse-table th,
+.nurse-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.nurse-table th {
+    background-color: #ebebeb;
+    cursor: pointer;
+    padding: 30px;
+    position: relative;
+}
+
+.nurse-table td input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.nurse-table td button {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.data-body {
+    background-color: #fff;
+}
+.sort-arrow::before {
+    content: "⇅";
+    font-size: 12px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.sort-arrow.asc::before {
+    content: "↑";
+    color: black;
+}
+
+.sort-arrow.desc::before {
+    content: "↓";
+    color: black;
+}

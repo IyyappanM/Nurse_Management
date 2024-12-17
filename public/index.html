@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="nurse-management-container">
+    <div class="container-fluid mt-5">
+        <h1 class="nurse-mgmt mb-4">Nurse Management</h1>
+
+        <!-- header search-->
+        <div class="search-form form-inline mb-3">
+            <input id="search-input" type="text" placeholder="Search here" class="form-control mr-2">
+            <button id="download-btn" class="btn btn-success ml-2">Download Excel</button>
+        </div>
+
+
+        <table class="nurse-table table table-bordered" id="nurse-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('id')">ID <span id="id-sort-icon" class="sort-arrow"></span></th>
+                    <th onclick="sortTable('name')">Name <span id="name-sort-icon" class="sort-arrow"></span></th>
+                    <th onclick="sortTable('license_number')">License Number <span id="license_number-sort-icon" class="sort-arrow"></span></th>
+                    <th onclick="sortTable('dob')">Date of Birth <span id="dob-sort-icon" class="sort-arrow"></span></th>
+                    <th onclick="sortTable('age')">Age <span id="age-sort-icon" class="sort-arrow"></span></th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="data-body">
+                <!-- Nurses data will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
